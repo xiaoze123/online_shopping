@@ -9,3 +9,7 @@ function addtab(r,c) {
     }
     return oTable;
 }
+function test()
+{
+    alert("hhhhhhhhhhhhhhhhhhhhh");
+}
