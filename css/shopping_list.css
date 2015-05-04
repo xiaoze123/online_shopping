@@ -1,5 +1,72 @@
-.table{
+.nav{
+    width: 100%;
+    background-color: rgb(35,35,35);
+}
+.nav_back_page{
+    background-color: rgb(35 35 35);
+}
+ul li{
+    display: inline;
+    padding-left:10%;
+}
+ul li a{
+    font-size: 2vw;
+    color:cadetblue;
+    text-decoration:none;
+}
+ul li a:hover{
+    background:darkslateblue;
+}
+a:hover {
+    color: white;
+}
+
+.product_list
+{
+    border:thin black solid;
+    height: 900px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.product_list_name
+{
+    border: thin black solid;
+    padding-left: 5%;
+    background: rgb(245, 245, 245);
+    height: 50px;
+    font-size: 30px;
+}
+#add_table
+{
+    border-collapse:collapse;
+    margin: 70px 50px 90px 50px;
+}
+#add_table td, #add_table th
+{
     text-align: center;
-    font-size: xx-large;
-    font-weight: 700;
+    font-size:30px;
+    border:1px solid #000000;
+    width: 3%;
+}
+img{
+    height:25px;
+    width:25px;
+    color: darkslategray;
+}
+img:hover{
+    color: #ffffff;
+}
+.sum{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 1px;
+}
+#payBtn{
+    margin-left: 77%;
+    margin-top:50px;
+    font-size: 40px;
+    border-radius: 10px;
+    background: rgb(14, 116, 175);
+    color: #ffffff;
 }
