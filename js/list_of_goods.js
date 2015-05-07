@@ -64,16 +64,18 @@ function show_store_list(){
         var btn_id = i.toString();
         var items = store_list[i];
         html = html +'<tr>';
-        html = html + '<td>'+items.classify+'</td><td>'+items.name+'</td><td>'+items.price+'</td><td>'+items.unit+'</td><td>'+'<button id='+btn_id+'type="button" style="color:white;background:rgb(88, 135, 207);font-size:20px;border-radius: 10px;" onclick="addShoppingCart()">加入购物车</button></td>';
+        html = html + '<td>'+items.classify+'</td><td>'+items.name+'</td><td>'+items.price+'</td><td>'+items.unit+'</td><td>'+'<button id='+btn_id+' type="button" style="color:white;background:rgb(88, 135, 207);font-size:20px;border-radius: 10px;" onclick="addShoppingCart(this.id)">加入购物车</button></td>';
         html = html + '</tr>';
     }
     $('#add_table').html(html);
 }
-function addShoppingCart(){
-    var btn_id = parseInt(event.srcElement.id,0);
+function addShoppingCart(id){
+
+    var btn_id = id;
     var cart_item = store_list[btn_id];
     var arr_cart_list = JSON.parse(localStorage.getItem('cart_list'))||[];
     cart_item.count = 1;
+
     cart_item.freecount = -1;
     if(arr_cart_list.length == 0){
         arr_cart_list.push(cart_item);

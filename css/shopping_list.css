@@ -1,9 +1,11 @@
 .nav{
     width: 100%;
-    background-color: rgb(35,35,35);
 }
 .nav_back_page{
-    background-color: rgb(35 35 35);
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 50px;
+    background-color: rgb(35, 35, 35);
 }
 ul li{
     display: inline;

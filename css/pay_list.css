@@ -1,6 +1,11 @@
+.nav_back_page{
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 50px;
+    background-color: rgb(35, 35, 35);
+}
 .container{
     width: 100%;
-    background-color: rgb(35,35,35);
 }
 .product_list_name
 {
@@ -55,4 +60,5 @@
 }
 #show_time{
     margin-left: 3%;
+    font-size: 25px;
 }
